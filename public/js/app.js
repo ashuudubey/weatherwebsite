@@ -1,4 +1,3 @@
-console.log('client side js file is this one')
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
