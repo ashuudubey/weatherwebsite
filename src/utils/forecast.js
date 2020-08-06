@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, 'In ' + body.location.region + ' it is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.' + ' The sky here is ' + body.current.weather_descriptions[0])
+            callback(undefined, 'In ' + body.location.region + ' it is currently ' + body.current.temperature + ' degress Farenhite out. There is a ' + body.current.precip + '% chance of rain.' + ' The sky here is ' + body.current.weather_descriptions[0] + ' the wind speed here is ' + body.current.wind_speed + ' km/h')
         }
     })
 }
